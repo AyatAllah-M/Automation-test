@@ -34,11 +34,6 @@ public class Improved {
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).click();
 
-        //Assert login success
-//        Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/v1/inventory.html");
-//        Assert.assertTrue(driver.findElement(By.className("product_label")).isDisplayed());
-//        Assert.assertEquals(driver.findElement(By.className("product_label")).getText(), "Products");
-
         //Add to cart
         driver.findElement(By.xpath("//button[@class=\"btn_primary btn_inventory\"][1]")).click();
 
@@ -57,4 +52,5 @@ public class Improved {
         driver.quit();
     }
 }
+
 
